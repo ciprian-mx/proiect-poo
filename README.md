@@ -1,12 +1,8 @@
-# Proiect POO: StellarLogix – Sistem de Gestiune a Expedițiilor Interstelare
+# StellarLogix – Sistem de Gestiune a Expedițiilor Interstelare
 
-### Folosiți template-ul corespunzător grupei voastre!
+### Descriere Proiect
 
-| Laborant  | Link template                                |
-|-----------|----------------------------------------------|
-| Dragoș B  | https://github.com/Ionnier/oop-template      |
-| Tiberiu M | https://github.com/MaximTiberiu/oop-template |
-| Marius MC | https://github.com/mcmarius/oop-template     |
+StellarLogix este o platformă de simulare și management pentru logistica spațială, concepută să gestioneze complexitatea misiunilor de explorare și transport între colonii planetare. Proiectul vizează implementarea unei structuri robuste de obiecte care să reflecte interdependențele dintr-o flotă spațială reală.
 
 ### Important!
 
