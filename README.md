@@ -1,4 +1,4 @@
-# Nu primesc notă pentru că nu am pus titlu și descriere
+# Proiect POO: StellarLogix – Sistem de Gestiune a Expedițiilor Interstelare
 
 ### Folosiți template-ul corespunzător grupei voastre!
 
