@@ -18,7 +18,7 @@ class Locatie
         return sqrt(pow(x - alta.x, 2) + pow(y - alta.y, 2) + pow(z - alta.z, 2));
     }
 
-    friend std::ostream& operator<<(std::ostream& os, const Locatie& loc) {
+    friend ostream& operator<<(ostream& os, const Locatie& loc) {
         os << loc.numeSector << " [" << loc.x << ", " << loc.y << ", " << loc.z << "]";
         return os;
     }
@@ -36,7 +36,7 @@ class Resursa
 
     double getGreutate() const {return greutateKg;}
 
-    friend std::ostream& operator<<(std::ostream& os, const Resursa& res) {
+    friend ostream& operator<<(ostream& os, const Resursa& res) {
         os << res.denumire << " (" << res.greutateKg << " kg)";
         return os;
     }
@@ -106,7 +106,7 @@ class Nava
 
     const Locatie& getLocatie() const { return locatieCurenta; }
 
-    friend std::ostream& operator<<(std::ostream& os, const Nava& nava) {
+    friend ostream& operator<<(ostream& os, const Nava& nava) {
         os << "Nava: " << nava.nume << " | Locatie: " << nava.locatieCurenta 
            << " | Sarcina utila: " << nava.numarResurse << "/" << nava.capacitateMaxima << " resurse\n";
         for (int i = 0; i < nava.numarResurse; ++i) {
@@ -141,7 +141,7 @@ class Misiune
         cout << "--------------------------------------\n";
     }
 
-    friend std::ostream& operator<<(std::ostream& os, const Misiune& misiune) {
+    friend ostream& operator<<(ostream& os, const Misiune& misiune) {
         os << "MISIUNE: " << misiune.codMisiune << " | Destinatie: " << misiune.destinatie << "\n";
         os << misiune.navaAsignata; // Apeleaza operatorul<< din Nava, care apeleaza din Locatie si Resursa
         return os;
