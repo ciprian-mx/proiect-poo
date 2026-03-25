@@ -31,7 +31,7 @@ class Resursa
     double greutateKg;
 
     public:
-    exlplicit Resursa(const string& denumire = "Necunoscut", double greutateKg = 0)
+    explicit Resursa(const string& denumire = "Necunoscut", double greutateKg = 0)
     : denumire(denumire), greutateKg(greutateKg){}
 
     double getGreutate() const {return greutateKg;}
