@@ -11,7 +11,7 @@ class Locatie
     string numeSector;
 
     public:
-    Locatie(double x = 0, double y  = 0, double z = 0, const string& numeSector = "Necunoscut")
+    explicit Locatie(double x = 0, double y  = 0, double z = 0, const string& numeSector = "Necunoscut")
     : x(x), y(y), z(z), numeSector(numeSector) {}
 
     double calculeazaDistanta(const Locatie& alta) const {
@@ -31,7 +31,7 @@ class Resursa
     double greutateKg;
 
     public:
-    Resursa(const string& denumire = "Necunoscut", double greutateKg = 0)
+    exlplicit Resursa(const string& denumire = "Necunoscut", double greutateKg = 0)
     : denumire(denumire), greutateKg(greutateKg){}
 
     double getGreutate() const {return greutateKg;}
