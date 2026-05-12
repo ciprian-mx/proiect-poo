@@ -60,7 +60,7 @@ O cerință nu se consideră îndeplinită dacă este realizată doar prin cod g
     - afișare virtuală, interfață non-virtuală
   - [X] apelarea constructorului din clasa de bază din constructori din derivate
   - [X] clasă cu atribut de tip pointer la o clasă de bază cu derivate; aici apelați funcțiile virtuale prin pointer de bază, eventual prin interfața non-virtuală din bază
-    - [ ] suprascris cc/op= pentru copieri/atribuiri corecte, copy and swap
+    - [X] suprascris cc/op= pentru copieri/atribuiri corecte, copy and swap
     - [ ] `dynamic_cast`/`std::dynamic_pointer_cast` pentru downcast cu sens
     - [ ] smart pointers (recomandat, opțional)
 - [ ] excepții
