@@ -68,8 +68,8 @@ O cerință nu se consideră îndeplinită dacă este realizată doar prin cod g
     - clasele de excepții trebuie să trateze categorii de erori distincte (exemplu de erori echivalente: citire fișiere cu diverse extensii)
   - [X] utilizare cu sens: de exemplu, `throw` în constructor (sau funcție care întoarce un obiect), `try`/`catch` în `main`
   - această ierarhie va fi complet independentă de ierarhia cu funcții virtuale
-- [ ] funcții și atribute `static`
-- [ ] STL
+- [X] funcții și atribute `static`
+- [X] STL
 - [X] cât mai multe `const`
 - [X] funcții *de nivel înalt*, de eliminat cât mai mulți getters/setters/funcții low-level
 - [ ] minim 75-78% din codul propriu să fie C++
