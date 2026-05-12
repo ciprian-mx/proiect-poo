@@ -12,6 +12,7 @@
 #include "ResursaValoroasa.h"
 #include "ResursaDeBaza.h"
 #include "Exceptii.h"
+#include "ResursaMisterioasa.h"
 using namespace std;
 
 int main()
@@ -25,7 +26,7 @@ int main()
     navaApollo.adaugaResursa(ResursaDeBaza("Alimente", 1500));
     navaApollo.adaugaResursa(ResursaDeBaza("Oxigen Lichid", 3000));
     navaApollo.adaugaResursa(ResursaDeBaza("Piese Schimb", 850));
-
+    navaApollo.adaugaResursa(ResursaMisterioasa("Artefact Extraterestru", 50, "Emite o lumina albastra", true));
     Nava navaBackup = navaApollo; 
 
     Misiune misiuneRosie("OP-RED-01", navaApollo, marte);
