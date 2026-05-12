@@ -70,8 +70,8 @@ O cerință nu se consideră îndeplinită dacă este realizată doar prin cod g
   - această ierarhie va fi complet independentă de ierarhia cu funcții virtuale
 - [ ] funcții și atribute `static`
 - [ ] STL
-- [ ] cât mai multe `const`
-- [ ] funcții *de nivel înalt*, de eliminat cât mai mulți getters/setters/funcții low-level
+- [X] cât mai multe `const`
+- [X] funcții *de nivel înalt*, de eliminat cât mai mulți getters/setters/funcții low-level
 - [ ] minim 75-78% din codul propriu să fie C++
 - [ ] la sfârșit: commit separat cu adăugarea unei noi clase derivate fără a modifica restul codului, **pe lângă cele 3 derivate deja adăugate** din aceeași ierarhie
   - noua derivată nu poate fi una existentă care a fost ștearsă și adăugată din nou
