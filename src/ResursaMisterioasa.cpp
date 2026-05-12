@@ -3,7 +3,8 @@
 ResursaMisterioasa :: ResursaMisterioasa(const std::string& denumire, double greutateKg, const std::string& descriere, bool volatila) :
 Resursa(denumire, greutateKg), descriere(descriere), volatila(volatila){}
 
-std::string ResursaMisterioasa::getDescriere() const {return descriere;}
+const std::string& ResursaMisterioasa::getDescriere() const {return descriere;}
+
 bool ResursaMisterioasa :: getVolatila() const {return volatila;}
 
 double ResursaMisterioasa::taxaTransport() const{

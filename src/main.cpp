@@ -71,6 +71,11 @@ int main()
     cout << "Nivel risc: " << navaApollo.calculeazaNivelRiscTotal() << "\n";
     cout << "Numar total de nave: " << Nava::getNumarNave() << "\n";
 
+
+    ResursaMisterioasa testArtefact("Artefact Z", 15, "Lumina verde", false);
+    cout << "Test getter descriere: " << testArtefact.getDescriere() << "\n";
+    cout << "Test getter volatila: " << testArtefact.getVolatila() << "\n";
+    
     return 0;
 }
 

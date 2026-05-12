@@ -8,7 +8,7 @@ private:
 
 public:
     explicit ResursaMisterioasa(const std::string& denumire = "Necunoscut", double greutateKg = 0, const std::string& descriere = "N/A", bool volatila = true);
-    std::string getDescriere() const;
+    const std::string& getDescriere() const;
     bool getVolatila() const;
     double taxaTransport() const override;
     Resursa* clone() const override;
