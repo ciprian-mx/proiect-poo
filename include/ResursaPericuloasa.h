@@ -6,7 +6,7 @@ class ResursaPericuloasa : public Resursa
 private:
     int gradRisc;
 public:
-    ResursaPericuloasa(const std::string& denumire = "Necunoscut", double greutateKg = 0, int gradRisc = 0);
+    explicit ResursaPericuloasa(const std::string& denumire = "Necunoscut", double greutateKg = 0, int gradRisc = 0);
     int getGradRisc() const;
     double taxaTransport() const override;
     Resursa* clone() const override;

@@ -99,7 +99,7 @@ int Nava:: calculeazaNivelRiscTotal() const{
 
     for (int i{}; i<numarResurse;++i)
     {
-        ResursaPericuloasa* resPericuloasa = dynamic_cast<ResursaPericuloasa*> (incarcatura[i]);
+        const ResursaPericuloasa* resPericuloasa = dynamic_cast<ResursaPericuloasa*> (incarcatura[i]);
         if(resPericuloasa != nullptr)
         {
             riscTotale+=resPericuloasa->getGradRisc();

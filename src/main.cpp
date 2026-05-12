@@ -66,6 +66,10 @@ int main()
         cout<<eroare->what()<<endl;
     }
 
+    cout << "Taxa totala: " << navaApollo.calculeazaTaxaTotalaTransport() << "\n";
+    cout << "Nivel risc: " << navaApollo.calculeazaNivelRiscTotal() << "\n";
+    cout << "Numar total de nave: " << Nava::getNumarNave() << "\n";
+
     return 0;
 }
 

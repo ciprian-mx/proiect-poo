@@ -6,7 +6,7 @@ class ResursaPerisabila : public Resursa{
     int zileValabilitate;
 
 public:
-    ResursaPerisabila(const std::string& denumire= "Necunoscut", double greutateKg= 0, int zileValabilitate= 0);
+    explicit ResursaPerisabila(const std::string& denumire= "Necunoscut", double greutateKg= 0, int zileValabilitate= 0);
     int getZileValabilitate() const;
     double taxaTransport () const override; 
     Resursa* clone() const override;
