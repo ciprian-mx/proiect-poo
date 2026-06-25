@@ -13,20 +13,30 @@
 #include "ResursaDeBaza.h"
 #include "Exceptii.h"
 #include "ResursaMisterioasa.h"
+#include "CentruComanda.h"
+#include "NavaBuilder.h"
+#include "TemplateUtils.h"
 using namespace std;
 
 int main()
 {
-    cout<< "=== Initializare Sisteme StellarLogix ===\n\n";
-
+    //cout<< "=== Initializare Sisteme StellarLogix ===\n\n";
+    CentruComanda::getInstance().logEveniment("Initializare Sisteme StellarLogix...");
     Locatie pamant(0, 0, 0, "Terra Base");
     Locatie marte(140, 50, -20, "Mars Colony Prime");
-
+/*
     Nava navaApollo("Apollo-V", pamant, 5);
     navaApollo.adaugaResursa(ResursaDeBaza("Alimente", 1500));
     navaApollo.adaugaResursa(ResursaDeBaza("Oxigen Lichid", 3000));
     navaApollo.adaugaResursa(ResursaDeBaza("Piese Schimb", 850));
     navaApollo.adaugaResursa(ResursaMisterioasa("Artefact Extraterestru", 50, "Emite o lumina albastra", true));
+*/
+    Nava navaApollo = NavaBuilder("Apollo-V", pamant, 5)
+                    .adaugaResursa(ResursaDeBaza("Alimente", 1500))
+                    .adaugaResursa(ResursaDeBaza("Oxigen Lichid", 3000))
+                    .adaugaResursa(ResursaDeBaza("Piese Schimb", 850))
+                    .build();
+
     Nava navaBackup = navaApollo; 
 
     Misiune misiuneRosie("OP-RED-01", navaApollo, marte);
@@ -75,6 +85,24 @@ int main()
     ResursaMisterioasa testArtefact("Artefact Z", 15, "Lumina verde", false);
     cout << "Test getter descriere: " << testArtefact.getDescriere() << "\n";
     cout << "Test getter volatila: " << testArtefact.getVolatila() << "\n";
+
+    cout << "\n=== Testare Functie Template ===\n";
+    string mesajTest = "Toate sistemele sunt functionale.";
+    logheazaDate<string>("Sistem", mesajTest);
+
+    logheazaDate<Nava>("Verificare Nava", navaApollo);
+
+
+    cout << "\n=== Testare Clasa Template ===\n";
+    Depozit<Locatie> depozitLocatiiSigure("Locatii Explorate");
+    depozitLocatiiSigure.adaugaElement(pamant);
+    depozitLocatiiSigure.adaugaElement(marte);
+    depozitLocatiiSigure.afiseazaContinut();
+
+    Depozit<ResursaDeBaza> depozitResurseBaza("Rezerve de Urgenta");
+    depozitResurseBaza.adaugaElement(ResursaDeBaza("Trusa Medicala", 20));
+    depozitResurseBaza.adaugaElement(ResursaDeBaza("Ratii Alimentare", 100));
+    depozitResurseBaza.afiseazaContinut();
     
     return 0;
 }
