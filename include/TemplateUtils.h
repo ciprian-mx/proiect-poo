@@ -15,7 +15,7 @@ private:
     std::vector<T> elemente;
 
 public:
-    Depozit(const std::string& nume) : numeDepozit(nume) {}
+    explicit Depozit(const std::string& nume) : numeDepozit(nume) {}
 
     void adaugaElement(const T& element) {
         elemente.push_back(element);

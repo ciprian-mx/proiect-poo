@@ -13,5 +13,5 @@ public:
 
     NavaBuilder& adaugaResursa(const Resursa& res);
 
-    Nava build();
+    const Nava& build() const;
 };

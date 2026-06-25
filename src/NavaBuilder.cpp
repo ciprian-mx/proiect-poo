@@ -8,6 +8,6 @@ NavaBuilder& NavaBuilder::adaugaResursa(const Resursa& res) {
     return *this;
 }
 
-Nava NavaBuilder::build() {
+const Nava& NavaBuilder::build() const {
     return navaInConstructie;
 }

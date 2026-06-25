@@ -6,5 +6,6 @@ CentruComanda& CentruComanda::getInstance() {
 }
 
 void CentruComanda::logEveniment(const string& mesaj) {
-    cout << "[LOG StellarLogix Centru Comanda]: " << mesaj << "\n";
+    nrLoguri++;
+    cout << "[LOG StellarLogix Centru Comanda] (Log #" << nrLoguri << "): " << mesaj << "\n";
 }

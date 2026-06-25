@@ -5,6 +5,7 @@ using namespace std;
 
 class CentruComanda {
 private:
+    int nrLoguri = 0;
     CentruComanda() {}
     
     CentruComanda(const CentruComanda&) = delete;
